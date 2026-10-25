@@ -1,0 +1,12 @@
+.gjc/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.venv/
+.env
+.env.*
+state/
+seen.json
+run.lock
+*.log
+.DS_Store
