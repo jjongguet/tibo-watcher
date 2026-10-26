@@ -61,7 +61,7 @@ All three sources are queried on **every invocation**, not only after a primary-
 |---|---|---|
 | [Codex Resets](https://codex-resets.com/) | `https://codex-resets.com/api/resets` | `events[]`: tweet ID/link, text, `announced_at`, `reset_type`. The optional `scheduled` object is also included as `planned`. |
 | [Tibo Watch](https://tibo.watch/) | `https://tibo.watch/feed.xml` | RSS items with `guid=x:<tweet ID>` and a title starting with `[planned]`, `[completed]` or `[banked]`. Incident/status items, hints and ordinary notes are excluded. |
-| [Tibo Reset](https://tiboreset.com/) | `https://tiboreset.com/feed.xml` | Atom entries with a Tibo tweet in `link[rel=via]`. Categories: `announce` → `planned`, `reset` → `completed`, `bank` → `banked`. Related chatter is excluded. |
+| [Tibo Reset](https://tiboreset.com/) | `https://tiboreset.com/feed.xml` | Atom entries with a Tibo tweet in `link[rel=via]`. Categories: `announce` → `planned`, `reset` → `completed`, `banked` → `banked`. Related chatter is excluded. |
 
 The underlying account is [@thsottiaux](https://x.com/thsottiaux). These are third-party feeds; their availability, labels, text and timestamps are **not independently verified**. In particular, API entries marked `source=observed` can be site-authored reports, not verbatim tweets.
 
